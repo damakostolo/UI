@@ -1,0 +1,13 @@
+flowchart TD
+  Start[Запит] --> Checks{Згода, модель, події?}
+  Checks -- Ні --> Hold[Без зміни]
+  Checks -- Так --> Task{Активне завдання або cooldown?}
+  Task -- Так --> Hold
+  Task -- Ні --> Score[Оцінки класів]
+  Score --> Threshold{Поріг впевненості і приросту?}
+  Threshold -- Ні --> Hold
+  Threshold -- Так --> Preview[Показати пропозицію]
+  Preview --> Confirm{Підтвердження?}
+  Confirm -- Ні --> Hold
+  Confirm -- Так --> Apply[Змінити макет]
+  Apply --> Undo[Можливий Undo]

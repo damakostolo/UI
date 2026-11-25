@@ -1,0 +1,15 @@
+erDiagram
+  AnonymousParticipant ||--o| ConsentRecord : has
+  AnonymousParticipant ||--o| LayoutState : has
+  AnonymousParticipant ||--o{ InteractionEvent : records
+  AnonymousParticipant ||--o{ Recommendation : receives
+  AnonymousParticipant ||--o{ StudyTrial : completes
+  ModelRun ||--o{ ModelArtifact : produces
+  AnonymousParticipant { string id PK string token UK }
+  ConsentRecord { string participant_id PK string version boolean enabled }
+  InteractionEvent { string event_id PK string participant_id FK string event_type datetime occurred_at }
+  LayoutState { string participant_id PK string current_layout string previous_layout }
+  Recommendation { string id PK string participant_id FK string status }
+  StudyTrial { string trial_id PK string participant_id FK int elapsed_ms }
+  ModelRun { string id PK string source }
+  ModelArtifact { string id PK string run_id FK string path }

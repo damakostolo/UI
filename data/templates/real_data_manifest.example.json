@@ -1,0 +1,13 @@
+{
+  "source": "volunteer",
+  "is_synthetic": false,
+  "status": "NOT_COLLECTED",
+  "consent_document_version": null,
+  "consent_approved_by": null,
+  "data_collection_start_at": null,
+  "data_collection_end_at": null,
+  "participant_count": null,
+  "trial_count": null,
+  "collection_procedure": "See docs/EXPERIMENT_PROTOCOL.md and docs/UX_STUDY_SESSION.md",
+  "note": "Template only: this file does not imply participants exist or consent was collected."
+}

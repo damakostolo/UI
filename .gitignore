@@ -1,0 +1,91 @@
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node.js
+node_modules/
+dist/
+build/
+.npm/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Testing and coverage
+coverage/
+.coverage
+htmlcov/
+playwright-report/
+test-results/
+.pytest_cache/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-wal
+*.db-shm
+
+# Trained ML models
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+*.pt
+*.pth
+
+# Real volunteer data
+/data/real/
+/results/real/
+
+# Thesis materials and handoff
+/thesis_handoff/
+/THESIS_HANDOFF.zip
+/AGENTS.md
+/START_HERE_CODEX.md
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.old
+/temp/
+/tmp/
+
+# IDE settings
+.idea/
+.vscode/
+.vs/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

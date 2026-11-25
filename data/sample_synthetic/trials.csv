@@ -1,0 +1,3 @@
+trial_id,participant_id,session_id,task_id,condition,layout_variant,sequence_index,elapsed_ms,click_count,completed,error_count,source,is_synthetic,consent_version
+syntrial01,syn_00001,syn_00001_0,find_task,static,standard,0,19000,5,True,0,synthetic,True,demo-synthetic
+syntrial02,syn_00002,syn_00002_0,find_task,rule,compact,0,23000,6,True,1,synthetic,True,demo-synthetic

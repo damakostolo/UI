@@ -1,0 +1,12 @@
+{
+  "is_synthetic": true,
+  "latency_ms_per_row_observed": {
+    "logistic_regression": 0.11283888953686175,
+    "random_forest": 0.2194875002411815,
+    "rule": "",
+    "static": "",
+    "xgboost": 0.16861250009646434
+  },
+  "note": "Latency depends on host; no UX latency claim",
+  "source": "synthetic"
+}

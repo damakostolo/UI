@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-11-03T16:25:13Z",
+  "commands": [
+    {"command": "python -m pytest -q", "status": "PASS", "observed": "11 passed, 1 external dateutil deprecation warning"},
+    {"command": "python scripts/validate_input_bundle.py", "status": "PASS", "observed": "19 starter inputs; 360 marked synthetic records"},
+    {"command": "python scripts/research_real.py", "status": "PASS", "observed": "MODEL_NOT_EVALUABLE: no real volunteer bundle supplied; no UX metrics created"},
+    {"command": "cd frontend && npm run typecheck", "status": "PASS", "observed": "TypeScript completed without errors"},
+    {"command": "cd frontend && npm test", "status": "PASS", "observed": "1 test passed"},
+    {"command": "cd frontend && npm run build", "status": "PASS", "observed": "Vite production build completed"},
+    {"command": "cd frontend && npm audit --json", "status": "PASS", "observed": "0 vulnerabilities reported"},
+    {"command": "python tests/e2e_browser.py", "status": "PASS", "observed": "Headless Chrome: Tab/Enter/Escape, consent-off, six widgets, focus, rule proposal with six-widget preview, accept, undo, revoke, profile deletion; screenshots saved; isolated test DB removed"},
+    {"command": "docker compose build", "status": "PASS", "observed": "backend and frontend images built from pinned dependencies; backend rebuilt cleanly from requirements-linux.lock"},
+    {"command": "docker compose up -d --build", "status": "PASS", "observed": "PostgreSQL healthy and empty; API /health 200 on 18000; frontend 200 on 15173"},
+    {"command": "python scripts/check_deliverables.py --strict", "status": "PASS", "observed": "28/28 required files present; no contract issues"}
+  ],
+  "not_executed": ["Manual WCAG 2.2 AA audit", "Real volunteer UX study", "SUS questionnaire"]
+}

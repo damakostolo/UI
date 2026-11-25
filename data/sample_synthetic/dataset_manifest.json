@@ -1,0 +1,13 @@
+{
+  "source": "synthetic",
+  "is_synthetic": true,
+  "n_participants": 120,
+  "n_sessions": 360,
+  "seed": 20261103,
+  "class_counts": {
+    "standard": 91,
+    "compact": 146,
+    "focus": 123
+  },
+  "warning": "СИНТЕТИЧНІ ДАНІ. НЕ ДОКАЗ ЕФЕКТИВНОСТІ СЕРЕД РЕАЛЬНИХ КОРИСТУВАЧІВ."
+}

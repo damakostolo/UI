@@ -1,0 +1,9 @@
+flowchart TB
+  UI[React UI] --> API[FastAPI]
+  API --> Consent[Згода і події]
+  API --> Policy[Політика рекомендацій]
+  API --> Study[UX спроби]
+  Consent --> DB[(PostgreSQL / SQLite)]
+  Policy --> Model[scikit-learn Pipeline]
+  Study --> DB
+  Model --> Reports[CSV JSON PNG SVG]

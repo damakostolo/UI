@@ -1,0 +1,13 @@
+{
+  "is_synthetic": true,
+  "packages": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.1.1"
+  },
+  "python": "3.12.0",
+  "source": "synthetic",
+  "system": "Windows-11-10.0.26200-SP0"
+}

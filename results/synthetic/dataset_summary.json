@@ -1,0 +1,12 @@
+{
+  "class_counts": {
+    "compact": 146,
+    "focus": 123,
+    "standard": 91
+  },
+  "is_synthetic": true,
+  "n_participants": 120,
+  "n_rows": 360,
+  "source": "synthetic",
+  "warning": "СИНТЕТИЧНІ ДАНІ — НЕ Є ОЦІНКОЮ РЕАЛЬНИХ КОРИСТУВАЧІВ"
+}

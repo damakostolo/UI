@@ -1,0 +1,11 @@
+feature,definition,unit,available_at,missing_policy
+opens_tasks_7d,Відкриття завдань за 7 діб,кількість,до рішення,0
+opens_reports_7d,Відкриття звітів за 7 діб,кількість,до рішення,0
+quick_actions_7d,Швидкі дії за 7 діб,кількість,до рішення,0
+avg_actions_per_session_7d,Середня кількість дозволених дій на сесію,дії/сесія,до рішення,0
+active_sessions_7d,Кількість сесій за 7 діб,кількість,до рішення,0
+prior_undo_rate,Частка попередніх скасувань змін,частка,до рішення,0
+last_device_category,Категорія пристрою,категорія,до рішення,unknown
+last_viewport_category,Категорія ширини екрана,категорія,до рішення,unknown
+time_of_day_bin,Частина доби,категорія,момент рішення,unknown
+current_layout,Поточний макет,категорія,момент рішення,standard

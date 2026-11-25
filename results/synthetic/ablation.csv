@@ -1,0 +1,4 @@
+stage,recommendations,automatic_changes,fallback,coverage,source,is_synthetic
+ML,64,64,8,0.8888888888888888,synthetic,true
+ML+threshold,45,45,27,0.625,synthetic,true
+ML+threshold+stability+user_control,45,0,27,0.625,synthetic,true

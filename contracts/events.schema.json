@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimal interaction event (no PII)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "participant_id",
+    "session_id",
+    "occurred_at",
+    "event_type",
+    "widget_id",
+    "source",
+    "is_synthetic",
+    "consent_version"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "participant_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_type": {
+      "enum": [
+        "widget_open",
+        "task_start",
+        "task_complete",
+        "quick_action",
+        "layout_preview",
+        "layout_accept",
+        "layout_reject",
+        "layout_undo"
+      ]
+    },
+    "widget_id": {
+      "enum": [
+        "tasks",
+        "calendar",
+        "activity",
+        "quick_actions",
+        "reports",
+        "notifications",
+        "none"
+      ]
+    },
+    "source": {
+      "enum": [
+        "volunteer",
+        "synthetic"
+      ]
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "consent_version": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "device_category": {
+      "enum": [
+        "desktop",
+        "tablet",
+        "mobile",
+        "unknown"
+      ]
+    },
+    "viewport_category": {
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "unknown"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "synthetic"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "volunteer"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

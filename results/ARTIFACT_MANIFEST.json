@@ -1,0 +1,317 @@
+[
+  {
+    "path": "results/command_log.md",
+    "role": "md",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "1584ea065f140b019df12dc6946ed477ebb8d50a889deb640dc59bc08f2e35e8"
+  },
+  {
+    "path": "results/config_snapshot.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "4f7c2f1c3dbfc2f20b95fc0eeebd02e6b5c9b02df24e82abee936c75755734e9"
+  },
+  {
+    "path": "results/EXPERIMENT_METHODS_UA.md",
+    "role": "md",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "3bcbab8f92d889c37d652fe588b94297b2db1b46d4ecb4cf0bba1a77c0509906"
+  },
+  {
+    "path": "results/feature_dictionary.csv",
+    "role": "csv",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "4246451a081788e199595c7831fed120c9ff5462b47de26bbbaaf521a87b15bd"
+  },
+  {
+    "path": "results/LIMITATIONS_UA.md",
+    "role": "md",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "afd9b1ccf97843367b3e93776cacc38492ba2cea3f4e35c73c31456b31284bb8"
+  },
+  {
+    "path": "results/README.md",
+    "role": "md",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "3049344531f8d9aea4b8ddbe33ecb21953fd768e2c5211c58204e884957de043"
+  },
+  {
+    "path": "results/real/README.md",
+    "role": "md",
+    "source": "volunteer",
+    "is_synthetic": false,
+    "sha256": "11de694de2ad4642e0b8f0adb9b6f792913ee4c8d9c932ae8c8a8e84fef32877"
+  },
+  {
+    "path": "results/screenshots/dashboard_focus.png",
+    "role": "png",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "273eb934a8e912af5795c55e8411cc93105ebd3a3b11c1d3533bcbba0bc21753"
+  },
+  {
+    "path": "results/screenshots/dashboard_standard.png",
+    "role": "png",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "265652e2773cbd6be4f61f94a3c14a2e8aa7cdab6d906c3cde61151f9ca6cc88"
+  },
+  {
+    "path": "results/split_manifest.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "6590bd10be59e216fb359397168df4121c0a0d6eff7e1fc8fb3c226ce80011de"
+  },
+  {
+    "path": "results/STATUS.md",
+    "role": "md",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "04bad4a7f96113fca66b5a594070aca0eab0103b1b277b1bd3b0674195ca1fb7"
+  },
+  {
+    "path": "results/synthetic/ablation.csv",
+    "role": "csv",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "189f79374f87d9f48f00ef996c130da6498fd0646dcfacd5c8a34918c313231e"
+  },
+  {
+    "path": "results/synthetic/ablation.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "11a4b3b9a400e3b389302c8f133a465ddd1f7f1f6dfe87c3575a91fcc79cc6fb"
+  },
+  {
+    "path": "results/synthetic/ablation.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "f80fe5865475d4522e26d4d0e8750216f2d504c2cd44244a43506b15ade773f3"
+  },
+  {
+    "path": "results/synthetic/class_distribution.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "40baea118606e171a3bce5e577511e07874e117481cd4b014cf87dd745c0953e"
+  },
+  {
+    "path": "results/synthetic/class_distribution.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "9ca78bff37b211c263bbf71764a0de3f425339a7a34c786cf243912238d94e73"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "e6a85746d12ad88b67c9d0150dd841872abc54f61736a9035f7dd381d787d5d2"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "a8f1c8f3f4831ec19a668f7316d9f66af19754543dfef1298470eb8546adb05a"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_logistic_regression.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "b776cadb4c188b6eda600f6ede30f0c129f9faf3024aacd799da442fdd883089"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_logistic_regression.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "ace1542ae34f792590f367f930f627bbb6b4ae0198efb8fead7366105c77803c"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_random_forest.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "e6a85746d12ad88b67c9d0150dd841872abc54f61736a9035f7dd381d787d5d2"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_random_forest.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "462b37d9d08e3a8de528b8ff428f13d7624c97eeb96c495176c511b529c85693"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_rule.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "eeb851d66fda27e27a967fee2f62ce9a22b97fc1badc71d0ab8313c4847e184c"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_rule.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "61baf5fe3738af3627b7587e5e5367c3a3cea185c117ff80dea08f56f87f59db"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_static.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "f3893ce30dbcdf379b95a3d534f68913c12612782933aeb347c3d918ad7de06a"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_static.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "da5701fa6ddeb03fe607b5339ed18532bd1bc6c59ff3f2fc3aeba2e5df5f0252"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_xgboost.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "ed2b73a54fd46f02ade1bd9feb27f5c3f14f4e61e5d144b03c025903116728ee"
+  },
+  {
+    "path": "results/synthetic/confusion_matrix_xgboost.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "cfab88ed9d9a4fcdfd1eb24b4b0b1f59d2d8beaf2c2ed61c61f2e6e0d22fa55a"
+  },
+  {
+    "path": "results/synthetic/dataset_card.md",
+    "role": "md",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "39a870a69c671449f66de270735b96c65a79532f426b4496339d31aead3f60ba"
+  },
+  {
+    "path": "results/synthetic/dataset_summary.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "d66b78a87680ab0afef4323369fbd66d6fab4a73a7ef699b59c901f2f88a73e3"
+  },
+  {
+    "path": "results/synthetic/demo_model.joblib",
+    "role": "joblib",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "c084dc742e9d49ebed89de22389cdd00b02528cd3bb02569842364aea7001802"
+  },
+  {
+    "path": "results/synthetic/environment.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "0beab456399c50e2beb15918685ba84a8c9491271c7c3404630ebd657934ad07"
+  },
+  {
+    "path": "results/synthetic/evaluation_report.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "b95f064e770ee6a2c732133b717ad4abf567e838005a8b6b1e8457b52f4fc65d"
+  },
+  {
+    "path": "results/synthetic/feature_distribution.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "36e262e957944bd8c563354b5f157a519293ec0e92fd454993bdf41ac218a4fb"
+  },
+  {
+    "path": "results/synthetic/feature_distribution.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "4ad3751a6bad5c4d4ef2e98feb79ee181469c0bd130cc742dbcbd3e5ea450050"
+  },
+  {
+    "path": "results/synthetic/feature_summary.csv",
+    "role": "csv",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "84d152947d6f64a3b1912cac89bd53b0a2b146c9d351858c90c1ad6df33a8fca"
+  },
+  {
+    "path": "results/synthetic/model_card.md",
+    "role": "md",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "82e21f3bb723c82f5aa75199e3e3f38d5d770e158cfd840c16ac41b16b5f1d2b"
+  },
+  {
+    "path": "results/synthetic/models_comparison.csv",
+    "role": "csv",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "c6809ce9b3a3fbebd87a86c98f8175257516cc29a40bbd766633660bb861036c"
+  },
+  {
+    "path": "results/synthetic/models_comparison.png",
+    "role": "png",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "c9912ff16b059e205da37a9ef7cdc377494ca086f5af9203362f0f3ed658f86b"
+  },
+  {
+    "path": "results/synthetic/models_comparison.svg",
+    "role": "svg",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "99a3736dc8d52fd49909b27e4104fb8fc498f4bc586c7f5a4ca39c39244dca15"
+  },
+  {
+    "path": "results/synthetic/policy_metrics.csv",
+    "role": "csv",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "189f79374f87d9f48f00ef996c130da6498fd0646dcfacd5c8a34918c313231e"
+  },
+  {
+    "path": "results/synthetic/system_benchmark.json",
+    "role": "json",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "7a31006ac8a48411669be78bf2917440c95ffbda3726d0062bef437bfc915d0d"
+  },
+  {
+    "path": "results/test_results.json",
+    "role": "json",
+    "source": "derived",
+    "is_synthetic": false,
+    "sha256": "6808efd9160f7af157fe4074d428175eee8921757d2f534e4c573ee2d81a8267"
+  },
+  {
+    "path": "results/THESIS_FIGURES_UA.md",
+    "role": "md",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "5482fa5e0ede67f4dfac6d46e0c583933dd3320a42a6641e48dea5e4ddcaaaed"
+  },
+  {
+    "path": "results/THESIS_TABLES_UA.md",
+    "role": "md",
+    "source": "synthetic",
+    "is_synthetic": true,
+    "sha256": "217b84a72490d78d4fa6f5eb51b2387438763b0b5c93654c1620ef6e0d5ebcae"
+  }
+]

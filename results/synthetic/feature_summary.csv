@@ -1,0 +1,7 @@
+feature,mean,median,source,is_synthetic
+opens_tasks_7d,8.588888888888889,9.0,synthetic,true
+opens_reports_7d,5.383333333333334,5.5,synthetic,true
+quick_actions_7d,7.65,7.0,synthetic,true
+avg_actions_per_session_7d,8.915944444444444,9.04,synthetic,true
+active_sessions_7d,3.9805555555555556,4.0,synthetic,true
+prior_undo_rate,0.1213361111111111,0.121,synthetic,true

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Explicit layout preference; must not be used as predictor feature",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "participant_id",
+    "session_id",
+    "decision_at",
+    "observed_until",
+    "preferred_layout",
+    "label_source",
+    "source",
+    "is_synthetic",
+    "consent_version"
+  ],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "decision_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "observed_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "preferred_layout": {
+      "enum": [
+        "standard",
+        "compact",
+        "focus"
+      ]
+    },
+    "label_source": {
+      "enum": [
+        "explicit_preference",
+        "synthetic_generator"
+      ]
+    },
+    "source": {
+      "enum": [
+        "volunteer",
+        "synthetic"
+      ]
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "consent_version": {
+      "type": "string",
+      "maxLength": 50
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "synthetic"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": true
+          },
+          "label_source": {
+            "const": "synthetic_generator"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "volunteer"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": false
+          },
+          "label_source": {
+            "const": "explicit_preference"
+          }
+        }
+      }
+    }
+  ]
+}

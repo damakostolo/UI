@@ -1,0 +1,14 @@
+sequenceDiagram
+  actor U as Користувач
+  participant F as React
+  participant A as FastAPI
+  participant M as Модель/політика
+  U->>F: Запит пропозиції
+  F->>A: POST /recommendations
+  A->>M: predecision features
+  M-->>A: propose / no_change
+  A-->>F: рішення і причини
+  F-->>U: Preview
+  U->>F: Підтвердити або відхилити
+  F->>A: accept / reject
+  A-->>F: стан макета

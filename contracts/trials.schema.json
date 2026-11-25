@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Actual or clearly synthetic UX task trial",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "trial_id",
+    "participant_id",
+    "session_id",
+    "task_id",
+    "condition",
+    "layout_variant",
+    "sequence_index",
+    "elapsed_ms",
+    "click_count",
+    "completed",
+    "error_count",
+    "source",
+    "is_synthetic",
+    "consent_version"
+  ],
+  "properties": {
+    "trial_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "participant_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{6,80}$"
+    },
+    "task_id": {
+      "enum": [
+        "find_task",
+        "open_report",
+        "use_quick_action"
+      ]
+    },
+    "condition": {
+      "enum": [
+        "static",
+        "rule",
+        "hybrid"
+      ]
+    },
+    "layout_variant": {
+      "enum": [
+        "standard",
+        "compact",
+        "focus"
+      ]
+    },
+    "sequence_index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "elapsed_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "click_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "error_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source": {
+      "enum": [
+        "volunteer",
+        "synthetic"
+      ]
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "consent_version": {
+      "type": "string",
+      "maxLength": 50
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "synthetic"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "const": "volunteer"
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "is_synthetic": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

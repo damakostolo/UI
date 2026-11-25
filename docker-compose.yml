@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ui_research
+      POSTGRES_USER: ui_research
+      POSTGRES_PASSWORD: local_only_change_me
+    volumes: [db_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ui_research -d ui_research"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  backend:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg://ui_research:local_only_change_me@db:5432/ui_research
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./results/synthetic:/app/results/synthetic:ro
+    ports: ["127.0.0.1:18000:8000"]
+  frontend:
+    build: ./frontend
+    environment:
+      VITE_API_URL: http://127.0.0.1:18000/api/v1
+    depends_on: [backend]
+    ports: ["127.0.0.1:15173:5173"]
+volumes:
+  db_data:
